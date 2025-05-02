@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Native Plant Identifier – Walla Walla</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Native Plant Identifier</h1>
+    <p>Select conditions to find native plants suited for Walla Walla, WA</p>
+  </header>
+
+  <section id="filters">
+    <div class="filter-group">
+      <label><input type="checkbox" value="rocky"> Rocky Soil</label>
+      <label><input type="checkbox" value="non-rocky"> Non-Rocky Soil</label>
+      <label><input type="checkbox" value="pollinator"> Pollinator Friendly</label>
+      <label><input type="checkbox" value="high-sun"> High Sun</label>
+      <label><input type="checkbox" value="part-sun"> Part Sun</label>
+      <label><input type="checkbox" value="no-water"> No Water</label>
+      <label><input type="checkbox" value="low-water"> Low Water</label>
+      <label><input type="checkbox" value="tall"> Tall</label>
+      <label><input type="checkbox" value="medium"> Medium</label>
+      <label><input type="checkbox" value="low"> Low-Growing</label>
+    </div>
+    <button id="filter-btn">Filter Plants</button>
+  </section>
+
+  <main id="plant-grid">
+    <!-- Add Plant Cards Below -->
+    <main id="plant-grid">
+        <main id="plant-grid">
+            <div class="plant-card" data-tags="rocky high-sun no-water tall pollinator">
+              <h2>Sagebrush (Artemisia tridentata)</h2>
+              <p><strong>Summary:</strong> Iconic shrub of sagebrush steppe; silver-gray foliage reduces water loss.</p>
+              <p><strong>Care:</strong> Prefers well-drained, sandy or loamy soils. Full sun. Drought-tolerant once established. No summer watering needed.</p>
+              <p><strong>Pollinators:</strong> Primarily wind-pollinated; supports insect and bird habitat.</p>
+              <p><strong>Blooming:</strong> Late summer to fall</p>
+              <p><strong>Best Planting Time:</strong> Fall preferred; spring also suitable</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/sagebrush.jpg" alt="Sagebrush" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky non-rocky high-sun no-water tall pollinator">
+              <h2>Gray Rabbitbrush (Ericameria nauseosa)</h2>
+              <p><strong>Summary:</strong> Bright yellow blooms late summer; attracts pollinators.</p>
+              <p><strong>Care:</strong> Adaptable to sandy and rocky soils. Full sun. Drought-tolerant. No irrigation needed once established.</p>
+              <p><strong>Pollinators:</strong> Wide variety of insects; crucial resource in late season.</p>
+              <p><strong>Blooming:</strong> Late summer to fall</p>
+              <p><strong>Best Planting Time:</strong> Fall</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/rabbitbrush.jpg" alt="Gray Rabbitbrush" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky high-sun no-water tall pollinator">
+              <h2>Bitterbrush (Purshia tridentata)</h2>
+              <p><strong>Summary:</strong> Dry slope native; key forage species for wildlife.</p>
+              <p><strong>Care:</strong> Grows well in rocky, well-drained soils. Requires full sun and no watering after establishment.</p>
+              <p><strong>Pollinators:</strong> Host plant for Brown Elfin butterfly (Callophrys augustinus).</p>
+              <p><strong>Blooming:</strong> Spring (April to June)</p>
+              <p><strong>Best Planting Time:</strong> Fall or early spring</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/bitterbrush.jpg" alt="Bitterbrush" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky non-rocky high-sun low-water medium pollinator">
+              <h2>Oregon Sunshine (Eriophyllum lanatum)</h2>
+              <p><strong>Summary:</strong> Bright yellow perennial; drought-tolerant once established.</p>
+              <p><strong>Care:</strong> Dry, rocky or sandy soils. Full sun. Water only during extreme drought.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Spring to early summer</p>
+              <p><strong>Best Planting Time:</strong> Fall preferred</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/oregonsunshine.jpg" alt="Oregon Sunshine" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky non-rocky high-sun low-water medium pollinator">
+              <h2>Purple Sage (Salvia dorrii)</h2>
+              <p><strong>Summary:</strong> Compact shrub with purple blooms; great for dry gardens.</p>
+              <p><strong>Care:</strong> Dry, well-drained sandy soils. Full sun. Minimal watering once established.</p>
+              <p><strong>Pollinators:</strong> Bees and hummingbirds.</p>
+              <p><strong>Blooming:</strong> Late spring to early summer</p>
+              <p><strong>Best Planting Time:</strong> Spring</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/purplesage.jpg" alt="Purple Sage" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky high-sun low-water medium pollinator">
+              <h2>Munro’s Globemallow (Sphaeralcea munroana)</h2>
+              <p><strong>Summary:</strong> Orange to pink blooms; attracts pollinators.</p>
+              <p><strong>Care:</strong> Well-drained, dry soils. Full sun. Minimal water after establishment.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Summer</p>
+              <p><strong>Best Planting Time:</strong> Spring or early fall</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/globemellow.jpg" alt="Munro's Globemallow" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky part-sun low-water low pollinator">
+              <h2>Arrowleaf Balsamroot (Balsamorhiza sagittata)</h2>
+              <p><strong>Summary:</strong> Large yellow flowers like sunflowers; excellent for pollinators.</p>
+              <p><strong>Care:</strong> Rocky, dry soils. Full sun. Very low water once established. Spring blooming.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Spring to early summer</p>
+              <p><strong>Best Planting Time:</strong> Fall</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/arrowleaf.jpg" alt="Arrowleaf Balsamroot" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky non-rocky part-sun low-water low pollinator">
+              <h2>Nodding Onion (Allium cernuum)</h2>
+              <p><strong>Summary:</strong> Graceful perennial with pink-white flowers; attracts bees.</p>
+              <p><strong>Care:</strong> Well-drained soil. Part sun to full sun. Water only occasionally in summer.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Summer (June to August)</p>
+              <p><strong>Best Planting Time:</strong> Fall or spring</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/onion.jpg" alt="Nodding Onion" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky high-sun low-water low pollinator">
+              <h2>Snow Buckwheat (Eriogonum niveum)</h2>
+              <p><strong>Summary:</strong> Low grower with delicate white/pink flowers; great for dry gardens.</p>
+              <p><strong>Care:</strong> Rocky or sandy dry soils. Full sun. Low water needs. Late bloom time.</p>
+              <p><strong>Pollinators:</strong> Honey bees and other insects.</p>
+              <p><strong>Blooming:</strong> Late summer to fall</p>
+              <p><strong>Best Planting Time:</strong> Fall</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/snowbuckwheat.jpg" alt="Snow Buckwheat" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky high-sun low-water low pollinator">
+              <h2>Strict Buckwheat (Eriogonum strictum)</h2>
+              <p><strong>Summary:</strong> Clusters of pink-white flowers; good for rock gardens.</p>
+              <p><strong>Care:</strong> Dry, coarse soil. Full sun. Attracts a variety of pollinators. Minimal watering.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Summer</p>
+              <p><strong>Best Planting Time:</strong> Fall</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/strictbuckwheat.jpg" alt="Strict Buckwheat" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky part-sun low-water low pollinator">
+              <h2>Yarrow (Achillea millefolium)</h2>
+              <p><strong>Summary:</strong> Tough perennial with lacy foliage and flat flower clusters.</p>
+              <p><strong>Care:</strong> Versatile in dry to moist soils. Full sun to part shade. Drought-tolerant. Extended bloom time with deadheading.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Spring to fall</p>
+              <p><strong>Best Planting Time:</strong> Fall or spring</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/yarrow.jpg" alt="Yarrow" class="plant-img" style="display: none;" />
+            </div>
+          
+            <div class="plant-card" data-tags="rocky high-sun low-water low pollinator">
+              <h2>Biscuitroot / Desert Parsley (Lomatium aristata)</h2>
+              <p><strong>Summary:</strong> Yellow umbel flowers; early bloomer beneficial to native insects.</p>
+              <p><strong>Care:</strong> Dry, rocky soil. Full sun. Extremely drought-tolerant once established.</p>
+              <p><strong>Pollinators:</strong> Bees and butterflies.</p>
+              <p><strong>Blooming:</strong> Spring to early summer</p>
+              <p><strong>Best Planting Time:</strong> Fall</p>
+              <button class="toggle-img">See Image</button>
+              <img src="images/biscuitroot.jpg" alt="Biscuitroot" class="plant-img" style="display: none;" />
+            </div>
+          </main>
+          
+      </main>
+      
+  </main>
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
