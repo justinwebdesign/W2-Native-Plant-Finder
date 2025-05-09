@@ -284,5 +284,23 @@
     <p>This information is based on native plant experts in the Walla Walla area. This list does not represent every native plant, but rather the recommended native plants for the Walla Walla region.</p>
   </footer>
   <script src="script.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleButton = document.getElementById('dropdownToggle');
+    const dropdown = document.getElementById('dropdownContent');
+
+    toggleButton.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent event bubbling
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Close dropdown if clicking outside
+    document.addEventListener('click', (e) => {
+      if (!dropdown.contains(e.target) && !toggleButton.contains(e.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  });
+</script>
 </body>
 </html>
