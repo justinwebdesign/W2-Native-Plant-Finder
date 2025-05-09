@@ -39,18 +39,15 @@ document.getElementById('filter-btn').addEventListener('click', () => {
   });
 });
   
-// New image toggle logic
-document.querySelectorAll('.toggle-img').forEach(button => {
-  button.addEventListener('click', () => {
-    const img = button.nextElementSibling;
-    if (img.style.display === 'none') {
-      img.style.display = 'block';
-      button.textContent = 'Hide Image';
-    } else {
-      img.style.display = 'none';
-      button.textContent = 'See Image';
-    }
-  }
-  );
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".toggle-img").forEach(button => {
+    button.addEventListener("click", () => {
+      const img = button.nextElementSibling;
+      if (img.style.display === "none" || img.style.display === "") {
+        img.style.display = "block";
+      } else {
+        img.style.display = "none";
+      }
+    });
+  });
 });
-})
