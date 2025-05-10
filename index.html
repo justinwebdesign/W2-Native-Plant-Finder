@@ -285,6 +285,19 @@
   </footer>
   <script src="script.js"></script>
   <script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Image toggle logic
+    const toggleButtons = document.querySelectorAll('.toggle-img');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const img = button.nextElementSibling;
+        if (img.style.display === 'block') {
+          img.style.display = 'none';
+        } else {
+          img.style.display = 'block';
+        }
+      });
+    });
   document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('dropdownToggle');
     const dropdown = document.getElementById('dropdownContent');
