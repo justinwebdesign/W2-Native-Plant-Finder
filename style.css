@@ -79,23 +79,20 @@ body {
   }
 }
 
-  #filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; /* space between items */
-    padding: 1rem;
-  }
-  
-  .filter-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-  
-  .filter-group label {
-    white-space: nowrap;
-  }
+ .filter-group label {
+  border: 2px solid #888;         /* Thicker, slightly darker border */
+  font-weight: bold;              /* Bold text */
+  padding: 0.5rem 0.75rem;        /* Slight padding for comfort */
+  border-radius: 5px;             /* Subtle rounding */
+  display: inline-block;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Keep checkbox styles consistent */
+.filter-group input[type="checkbox"] {
+  transform: scale(1.1);         /* Slightly larger checkboxes */
+  margin-right: 0.4rem;
 }
   }
   .modal {
