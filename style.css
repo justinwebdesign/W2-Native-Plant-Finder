@@ -79,22 +79,52 @@ body {
   }
 }
 
-  #filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem; /* space between items */
-    padding: 1rem;
-  }
-  
-  .filter-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-  
-  .filter-group label {
-    white-space: nowrap;
+ #filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  max-width: 900px;
+}
+
+/* Individual filter items */
+.filter-group label {
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Checkbox appearance */
+.filter-group input[type="checkbox"] {
+  accent-color: #228B22; /* forest green */
+  transform: scale(1.2);
+}
+
+/* Hover & active effects */
+.filter-group label:hover {
+  background-color: #e6f4ea;
+  border-color: #228B22;
+  transform: scale(1.03);
+}
+
+/* Checked box style */
+.filter-group input[type="checkbox"]:checked + label,
+.filter-group label:has(input:checked) {
+  border-color: #228B22;
+  background-color: #def5e0;
+}
   }
   .modal {
     display: none;
