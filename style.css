@@ -80,7 +80,7 @@ body {
 }
 
  .filter-group label {
-  border: 2px solid #888;         /* Thicker, slightly darker border */
+  border: 1.5px solid #888;         /* Thicker, slightly darker border */
   font-weight: bold;              /* Bold text */
   padding: 0.5rem 0.75rem;        /* Slight padding for comfort */
   border-radius: 5px;             /* Subtle rounding */
@@ -91,7 +91,7 @@ body {
 
 /* Keep checkbox styles consistent */
 .filter-group input[type="checkbox"] {
-  transform: scale(1.1);         /* Slightly larger checkboxes */
+  transform: scale(1.08);         /* Slightly larger checkboxes */
   margin-right: 0.4rem;
 }
   }
