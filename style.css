@@ -83,8 +83,13 @@ body {
   }
 }
 #filters {
-  margin-top: 1.5rem; /* create space between header and filters */
-  /* keep existing styles */
+  margin-top: 2rem; /* creates visible gray space above filters */
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: #f2f2f2; /* match body for continuity */
 }
 
  .filter-group label {
