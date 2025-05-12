@@ -5,11 +5,13 @@ body {
     background: #f5f5f5;
   }
   
-  header {
-    background-color: #4a7c59;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+ header {
+  background-color: #3e7a53; /* or whatever green you're using */
+  color: white;
+  padding: 0.5rem 1rem;      /* reduce from larger values like 2rem */
+  text-align: center;
+}
+
   }
 .dropdown {
   position: absolute;
@@ -77,6 +79,10 @@ body {
   .dropdown-content {
     min-width: 200px;
   }
+}
+#filters {
+  margin-top: 1.5rem; /* create space between header and filters */
+  /* keep existing styles */
 }
 
  .filter-group label {
