@@ -16,7 +16,7 @@ body {
 
   }
 .dropdown {
-  position: absolute;
+  position: center;
   top: 20px;
   right: 0px;
   z-index: 1000;
